@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://sarathlal.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sarathlal.com/" rel="alternate" type="text/html" /><updated>2023-07-24T23:59:45+05:30</updated><id>https://sarathlal.com/feed.xml</id><title type="html">Sarathlal N</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><entry><title type="html">Streamlining Development - Our Journey with Git, Bitbucket, and Jira</title><link href="https://sarathlal.com/git-workflow-bitbucket-jira/" rel="alternate" type="text/html" title="Streamlining Development - Our Journey with Git, Bitbucket, and Jira" /><published>2023-07-24T00:00:00+05:30</published><updated>2023-07-24T00:00:00+05:30</updated><id>https://sarathlal.com/git-workflow-bitbucket-jira</id><content type="html" xml:base="https://sarathlal.com/git-workflow-bitbucket-jira/"><![CDATA[<p>In our development team, we’ve recently made a significant change to how we work. We’ve adopted the <code class="language-plaintext highlighter-rouge">Git Feature Branch Workflow</code>, along with <code class="language-plaintext highlighter-rouge">Bitbucket</code> and <code class="language-plaintext highlighter-rouge">Jira</code>. These tools have transformed how we build software, making it easier to collaborate, manage tasks, and maintain a structured codebase.</p>
+
+<p>Here are the steps:</p>
+
+<h3 id="set-up-the-repository">Set Up the Repository:</h3>
+
+<ol>
+  <li>Create a Git repository on Bitbucket to host our project’s codebase.</li>
+  <li>Invite team members to the repository, granting them appropriate access levels.</li>
+</ol>
+
+<h3 id="create-the-jira-project">Create the Jira Project:</h3>
+
+<ol>
+  <li>Set up a Jira project to manage tasks, issues, and project tracking.</li>
+  <li>Integrate the Jira project with the Bitbucket repository to link code changes to specific tasks/issues.</li>
+</ol>
+
+<h3 id="branch-naming-convention">Branch Naming Convention:</h3>
+
+<p>Establish a clear and consistent branch naming convention.</p>
+
+<p>For example:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">feature/&lt;Jira-Issue-Key&gt;-&lt;short-description&gt;</code> for feature branches.</li>
+  <li><code class="language-plaintext highlighter-rouge">bugfix/&lt;Jira-Issue-Key&gt;-&lt;short-description&gt;</code> for bug fix branches.</li>
+  <li><code class="language-plaintext highlighter-rouge">hotfix/&lt;Jira-Issue-Key&gt;-&lt;short-description&gt;</code> for critical hotfix branches.</li>
+</ol>
+
+<h3 id="workflow">Workflow:</h3>
+
+<h4 id="main-branches">Main Branches:</h4>
+<ol>
+  <li><em>master</em>: Represents the production-ready codebase.</li>
+  <li><em>develop</em>: Integration branch for ongoing development and testing.</li>
+</ol>
+
+<h4 id="feature-branches">Feature Branches:</h4>
+<p>Developers create feature branches from develop to work on specific tasks or features.</p>
+
+<h4 id="bug-fix-branches">Bug Fix Branches:</h4>
+<p>Developers create bug fix branches from develop to address specific issues.</p>
+
+<h4 id="hotfix-branches">Hotfix Branches:</h4>
+<p>For critical production fixes, create hotfix branches from master.</p>
+
+<h3 id="development-process">Development Process:</h3>
+
+<h4 id="new-featurebug-fix">New Feature/Bug Fix:</h4>
+<ol>
+  <li>Developers create a new branch from develop or master, depending on the nature of the task.</li>
+  <li>Work on the feature/bug fix and commit changes to the branch.</li>
+  <li>Regularly push the branch to Bitbucket to enable collaboration and backups.</li>
+</ol>
+
+<h4 id="code-review">Code Review:</h4>
+<ol>
+  <li>Open a pull request (PR) on Bitbucket when the feature/bug fix is ready for review.</li>
+  <li>Assign the PR to one or more team members for review.</li>
+  <li>Team members review the code, provide feedback, and request changes if necessary.</li>
+  <li>Developers make adjustments based on feedback until the PR is approved.</li>
+</ol>
+
+<h4 id="merge-to-develop">Merge to Develop:</h4>
+<ol>
+  <li>Once the PR is approved, merge the feature/bug fix branch into develop.</li>
+  <li>Test the changes in the develop branch to ensure everything is working as expected.</li>
+</ol>
+
+<h4 id="release">Release:</h4>
+<ol>
+  <li>When the develop branch is ready for release, create a release branch from develop.</li>
+  <li>Test the release branch thoroughly.</li>
+  <li>Merge the release branch into master and tag it with a version number.</li>
+  <li>Deploy the code from master to production.</li>
+</ol>
+
+<h4 id="hotfix">Hotfix:</h4>
+<ol>
+  <li>For critical production issues, create a hotfix branch from master.</li>
+  <li>Make the necessary changes in the hotfix branch.</li>
+  <li>Merge the hotfix branch back into both master and develop.</li>
+  <li>Deploy the code from master to production.</li>
+</ol>
+
+<h3 id="jira-integration">Jira Integration:</h3>
+<ol>
+  <li>Link Jira issues to related pull requests on Bitbucket.</li>
+  <li>Add commit messages or branch names that include Jira issue keys to automatically link them to corresponding issues in Jira.</li>
+</ol>
+
+<h3 id="documentation">Documentation:</h3>
+<ol>
+  <li>Encourage developers to maintain comprehensive documentation.</li>
+  <li>Document the workflow and update it as needed to ensure everyone follows the same process.</li>
+</ol>
+
+<p>By following this workflow, our team can maintain a structured and collaborative development process, making it easier to track progress, manage code changes, and deploy releases.</p>]]></content><author><name></name></author><category term="git" /><category term="Project management" /><category term="Development" /><summary type="html"><![CDATA[In our development team, we’ve recently made a significant change to how we work. We’ve adopted the Git Feature Branch Workflow, along with Bitbucket and Jira. These tools have transformed how we build software, making it easier to collaborate, manage tasks, and maintain a structured codebase.]]></summary></entry><entry><title type="html">The Amazing Adventure - Solving the Mysteries of a WooCommerce Store</title><link href="https://sarathlal.com/optimizing-woocommerce-slow-admin-side-payment-gateway-plugin/" rel="alternate" type="text/html" title="The Amazing Adventure - Solving the Mysteries of a WooCommerce Store" /><published>2023-07-12T00:00:00+05:30</published><updated>2023-07-12T00:00:00+05:30</updated><id>https://sarathlal.com/optimizing-woocommerce-slow-admin-side-payment-gateway-plugin</id><content type="html" xml:base="https://sarathlal.com/optimizing-woocommerce-slow-admin-side-payment-gateway-plugin/"><![CDATA[<p>It was a regular week when I started an extraordinary journey. I took on the task of optimizing a WooCommerce store that had a wide range of products and orders. The technical setup seemed impressive—a managed VPS with a powerful 8GB RAM and a spacious 160GB storage.</p>
+
+<p>But, unfortunately, the admin section was incredibly slow. Each click in the admin area would make me wait for a frustrating 20 to 30 seconds, sometimes even up to a minute before my browser gave up and timed out.</p>
+
+<p>However, amidst this slowness, the front end of the store was working fine. Customers were happily buying items without any issues. It was a good sign!</p>
+
+<p>Determined to find out what was causing this strange situation, I began a daring quest. With patience, I painstakingly cloned the entire website to my local machine, which was quite large in size—2GB for the database alone and over 50GB in total. Working on the live site was not an option since customers were actively making purchases, and I couldn’t risk downtime or a slow recovery.</p>
+
+<p>Armed with determination, I started optimizing the website. I removed unnecessary data like temporary files, old versions, deleted content, and unused options. I used a tool called WP-CLI, which helped me complete these tasks in just 10 minutes. I also got rid of over a hundred thousand unapproved comments, thanks to WP-CLI once again.</p>
+
+<p>However, the admin side of the store still suffered from slowness. It was time to take drastic measures.</p>
+
+<p>I activated the “Query Monitor” plugin, which showed me some shocking results. A single WordPress admin page triggered a massive number of 65,020 SQL queries, consuming a whopping 1,860MB of data! While “Query Monitor” gave me some insight, when I tried to dig deeper, my page froze, and I couldn’t do anything.</p>
+
+<p><img src="/images/2023/7/optimizing-woocommerce-store-slow-admin-side-payment-gateway-plugin-surprise.png" alt="Slow admin pages due to payment gateway plugin - WooCommerce" /></p>
+
+<p>To my astonishment, I made a remarkable discovery. The store was using a custom theme, so I switched to the default theme, thinking it might help. Unfortunately, it didn’t change anything.</p>
+
+<p>Undeterred, I decided to systematically disable plugins one by one, starting with the unfamiliar and less popular ones. But even after removing them, the problem persisted. Next, I focused on plugins that handled bulk data. Despite removing them, I still didn’t see any improvement.</p>
+
+<p>Finally, I turned my attention to the plugins I trusted, the ones that had never let me down before. And guess what? In the midst of this unfolding drama, when I renamed a payment gateway plugin, the admin pages became lightning-fast, and the number of queries dropped to just 250.</p>
+
+<p>Can you believe it? A payment gateway plugin, designed to handle transactions, was causing a flood of 65,020 SQL queries across all admin pages. It was bewildering and relentless, a testament to the intricate nature of WordPress and PHP.</p>
+
+<p>As software developers, we have the power to code, but true greatness lies in writing good code. We often blame programming languages and frameworks for performance issues, but the real problem often lies in our own code quality. Unit testing, code reviews, and quality assurance can help us identify these issues, but sometimes we still fail.</p>
+
+<p>So, here is the happy ending to our story. Before we start writing code, let’s understand its impact and strive for infinite possibilities. Our code is the backbone of many businesses. It builds trust among users and generates income. Therefore, let’s commit ourselves to writing high-quality code. And if we can’t, maybe it’s better not to write a single line of code intended for production.</p>]]></content><author><name></name></author><category term="WordPress" /><category term="Optimization" /><category term="WordPress Plugins" /><category term="WooCommerce" /><summary type="html"><![CDATA[It was a regular week when I started an extraordinary journey. I took on the task of optimizing a WooCommerce store that had a wide range of products and orders. The technical setup seemed impressive—a managed VPS with a powerful 8GB RAM and a spacious 160GB storage.]]></summary></entry><entry><title type="html">Installing Docker Compose in Linux Mint 20</title><link href="https://sarathlal.com/installing-docker-compose-linux-mint-20/" rel="alternate" type="text/html" title="Installing Docker Compose in Linux Mint 20" /><published>2022-10-12T00:00:00+05:30</published><updated>2022-10-12T00:00:00+05:30</updated><id>https://sarathlal.com/installing-docker-compose-linux-mint-20</id><content type="html" xml:base="https://sarathlal.com/installing-docker-compose-linux-mint-20/"><![CDATA[<h3 id="install-required-packages--tools">Install required packages &amp; tools</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
+sudo apt install wget curl
+</code></pre></div></div>
+
+<h3 id="download-docker-compose">Download docker compose</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url  | grep docker-compose-linux-x86_64 | cut -d '"' -f 4 | wget -qi -
+</code></pre></div></div>
+
+<h3 id="make-the-script-executable">Make the script executable</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x docker-compose-linux-x86_64
+</code></pre></div></div>
+
+<h3 id="move-the-file-inside-path-directory">Move the file inside PATH directory</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mv docker-compose-linux-x86_64 /usr/local/bin/docker-compose
+</code></pre></div></div>
+
+<h3 id="verify-that-installation-was-successful">Verify that installation was successful</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose version
+</code></pre></div></div>]]></content><author><name></name></author><category term="Docker" /><summary type="html"><![CDATA[Install required packages &amp; tools]]></summary></entry><entry><title type="html">Using PostgreSQL database with Django</title><link href="https://sarathlal.com/postgresql-database-with-django/" rel="alternate" type="text/html" title="Using PostgreSQL database with Django" /><published>2022-10-08T00:00:00+05:30</published><updated>2022-10-08T00:00:00+05:30</updated><id>https://sarathlal.com/postgresql-database-with-django</id><content type="html" xml:base="https://sarathlal.com/postgresql-database-with-django/"><![CDATA[<p>In default, Django uses SQLite database &amp; Django automatically creates a SQLite database for our project. But today, I like to use the PostgreSQL database in my application &amp; the required steps are given below.</p>
+
+<h2 id="connect-to-postgres-database-server">Connect to Postgres Database Server</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -u postgres psql
+</code></pre></div></div>
+
+<h2 id="creating-database">Creating Database</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE DATABASE mydb;
+</code></pre></div></div>
+
+<h2 id="creating-user">Creating User</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE USER myuser WITH ENCRYPTED PASSWORD 'mypass';
+</code></pre></div></div>
+
+<h2 id="modifying-connection-parameters-for-django">Modifying Connection Parameters for Django</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ALTER ROLE myuser SET client_encoding TO 'utf8';
+ALTER ROLE myuser SET default_transaction_isolation TO 'read committed';
+ALTER ROLE myuser SET timezone TO 'UTC';
+</code></pre></div></div>
+
+<h2 id="granting-permission-to-the-user">Granting Permission To The User</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
+</code></pre></div></div>
+
+<h2 id="exit-the-sql-prompt">Exit the SQL prompt</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\q
+</code></pre></div></div>
+
+<h2 id="update-django-configuration">Update Django configuration</h2>
+
+<p>Open the settings.py file of our project and scroll to the database section. It looks like below one.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+</code></pre></div></div>
+
+<p>Update these settings with our PostgreSQL database details.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'mydb',
+        'USER': 'myuser',
+        'PASSWORD': 'mypass',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+</code></pre></div></div>
+
+<h2 id="verify-the-database-connection">Verify the database connection</h2>
+
+<p>In the directory where <code class="language-plaintext highlighter-rouge">manage.py</code> script exists, run the below command.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python manage.py migrate
+</code></pre></div></div>
+
+<p>If there are no errors, database migration will happen. Else errors will be displayed.</p>]]></content><author><name></name></author><category term="Python" /><category term="Django" /><summary type="html"><![CDATA[In default, Django uses SQLite database &amp; Django automatically creates a SQLite database for our project. But today, I like to use the PostgreSQL database in my application &amp; the required steps are given below.]]></summary></entry><entry><title type="html">Find largest number in a list of numbers - Python</title><link href="https://sarathlal.com/find-largest-number-in-list-python/" rel="alternate" type="text/html" title="Find largest number in a list of numbers - Python" /><published>2022-06-10T00:00:00+05:30</published><updated>2022-06-10T00:00:00+05:30</updated><id>https://sarathlal.com/find-largest-number-in-list-python</id><content type="html" xml:base="https://sarathlal.com/find-largest-number-in-list-python/"><![CDATA[<p>There are multiple ways to find the largest number in a list using Python. Here are 2 basic methods I have used regularly.</p>
+
+<h3 id="using-max-function">Using max() function</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># list
+my_list = [10, 20, 4, 45, 99]
+  
+# printing the last element
+print("Largest element is:", max(my_list))
+</code></pre></div></div>
+
+<h3 id="sort-the-list-in-ascending-order--print-last-element">Sort the list in ascending order &amp; print last element</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># list
+my_list = [10, 20, 4, 45, 99]
+  
+# sorting the list
+my_list.sort()
+  
+# printing the last element
+print("Largest element is:", my_list[-1])
+</code></pre></div></div>]]></content><author><name></name></author><category term="Python" /><summary type="html"><![CDATA[There are multiple ways to find the largest number in a list using Python. Here are 2 basic methods I have used regularly.]]></summary></entry><entry><title type="html">Solve “ValueError invalid literal for int() with base 10” - Python</title><link href="https://sarathlal.com/value-error-invalid-literal-for-int-with-base-10-python/" rel="alternate" type="text/html" title="Solve “ValueError invalid literal for int() with base 10” - Python" /><published>2022-06-07T00:00:00+05:30</published><updated>2022-06-07T00:00:00+05:30</updated><id>https://sarathlal.com/value-error-invalid-literal-for-int-with-base-10-python</id><content type="html" xml:base="https://sarathlal.com/value-error-invalid-literal-for-int-with-base-10-python/"><![CDATA[<p>Normally “ValueError: invalid literal for <code class="language-plaintext highlighter-rouge">int()</code> with base 10” error occurs when we try to convert an invalid object into an integer.</p>
+
+<p>The cases are,</p>
+
+<ol>
+  <li>Passing a string containing anything that is not a number, like letters and special characters.</li>
+  <li>Passing a string-type object that looks like a float type.</li>
+</ol>
+
+<p>Example</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int_var = int("...")
+</code></pre></div></div>
+
+<p>The solution is to ensure that we do not pass any letters or special characters to <code class="language-plaintext highlighter-rouge">int()</code> function.</p>
+
+<h3 id="solution-1">Solution 1</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import re
+myInput= "123a"
+matched=re.search("[^\d]",myInput)
+if matched==None:
+    myInt=int(myInput)
+    print("Output Integer is:")
+    print(myInt)
+else:
+    print("Input Cannot be converted into Integer.")
+</code></pre></div></div>
+
+<h3 id="solution-2">Solution 2</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>myInput= "123a"
+if myInput.isdigit():
+    print("Output Integer is:")
+    myInt=int(myInput)
+    print(myInt)
+else:
+    print("Input cannot be converted into integer.")
+</code></pre></div></div>]]></content><author><name></name></author><category term="Python" /><summary type="html"><![CDATA[Normally “ValueError: invalid literal for int() with base 10” error occurs when we try to convert an invalid object into an integer.]]></summary></entry><entry><title type="html">Handling dynamic subdomain with Flask - Python</title><link href="https://sarathlal.com/handling-dynamic-subdomain-flask-python/" rel="alternate" type="text/html" title="Handling dynamic subdomain with Flask - Python" /><published>2022-06-04T00:00:00+05:30</published><updated>2022-06-04T00:00:00+05:30</updated><id>https://sarathlal.com/handling-dynamic-subdomain-flask-python</id><content type="html" xml:base="https://sarathlal.com/handling-dynamic-subdomain-flask-python/"><![CDATA[<p>Here is my minimal flask application.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "&lt;p&gt;Hello, World!&lt;/p&gt;"
+</code></pre></div></div>
+
+<p>Now to run the application, I have to use the commands below in the terminal.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export FLASK_APP=hello
+flask run
+</code></pre></div></div>
+
+<p>Visit <code class="language-plaintext highlighter-rouge">http://localhost:5000</code> in your browser &amp; we can see <code class="language-plaintext highlighter-rouge">hello world</code>. Just try with subdomain - <code class="language-plaintext highlighter-rouge">http://app.localhost:5000</code> &amp; we will still get the same output.</p>
+
+<p>Now we can modify our code littile bit.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from flask import Flask
+
+app = Flask(__name__)
+app.config['SERVER_NAME'] = "localhost:5000"
+
+@app.route('/')
+def hello_world():
+    return "&lt;p&gt;Hello, World!&lt;/p&gt;"
+
+@app.route('/', subdomain="&lt;subdomain&gt;")
+def home(subdomain="default"):
+    return f'&lt;p&gt;Hello, World from {subdomain}&lt;/p&gt;'
+</code></pre></div></div>
+
+<p>Now visit the <code class="language-plaintext highlighter-rouge">http://localhost:5000</code> in your browser &amp; we can see the old <code class="language-plaintext highlighter-rouge">hello world</code> text. Now it is the time to check with a sub domain - <code class="language-plaintext highlighter-rouge">http://app.localhost:5000</code> &amp; we can see the different output.</p>
+
+<p>The first change we made is to add the ‘SERVER_NAME’ config value. Without this value Flask will not be able to differentiate which part of the URL is subdomain and which part is the domain.</p>
+
+<p>The second change is adding extra <code class="language-plaintext highlighter-rouge">@app.route('/', subdomain="&lt;subdomain&gt;")</code> this will match all the url with pattern <code class="language-plaintext highlighter-rouge">http://*.localhost:5000</code> and pass the subdomain value as parameter for route function as given name subdomain.</p>
+
+<p>If we visit a URL without the subdomain, the first route function will catch that URL and the subdomain value will be the default value. If we have a subdomain value the second route will catch that request and the subdomain value will be whatever value we used as subdomain.</p>]]></content><author><name></name></author><category term="Flask" /><category term="Python" /><summary type="html"><![CDATA[Here is my minimal flask application.]]></summary></entry><entry><title type="html">A minimal example about WordPress object cache</title><link href="https://sarathlal.com/minimal-example-wordpress-object-cache/" rel="alternate" type="text/html" title="A minimal example about WordPress object cache" /><published>2022-06-02T00:00:00+05:30</published><updated>2022-06-02T00:00:00+05:30</updated><id>https://sarathlal.com/minimal-example-wordpress-object-cache</id><content type="html" xml:base="https://sarathlal.com/minimal-example-wordpress-object-cache/"><![CDATA[<p>Today, I need to do the same database query (WP Query) multiple times within a single page rendering. To reduce server overload, I tried to store the first query result into WordPress default object cache &amp; then the upcoming fetches are performed from the cache.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function wp_object_cache_sample_function() {
+    $key = "your_cache_key";
+    if ( ! $query = wp_cache_get($key) ) {
+        $args = array(  
+            'post_type' =&gt; 'services',
+            'post_status' =&gt; 'publish',
+            'posts_per_page' =&gt; 8, 
+            'orderby’ =&gt; 'title', 
+            'order’ =&gt; 'ASC', 
+        );
+
+        $query = new WP_Query($args);
+        wp_cache_set($key,$query,'',3600);
+    }
+    return $query;
+}
+</code></pre></div></div>]]></content><author><name></name></author><category term="WordPress" /><category term="Optimization" /><summary type="html"><![CDATA[Today, I need to do the same database query (WP Query) multiple times within a single page rendering. To reduce server overload, I tried to store the first query result into WordPress default object cache &amp; then the upcoming fetches are performed from the cache.]]></summary></entry><entry><title type="html">Select random element from a list - Python</title><link href="https://sarathlal.com/select-random-element-from-list-python/" rel="alternate" type="text/html" title="Select random element from a list - Python" /><published>2022-05-27T00:00:00+05:30</published><updated>2022-05-27T00:00:00+05:30</updated><id>https://sarathlal.com/select-random-element-from-list-python</id><content type="html" xml:base="https://sarathlal.com/select-random-element-from-list-python/"><![CDATA[<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import random
+
+items = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+random_item = random.choice(items)
+print(random_item)
+</code></pre></div></div>]]></content><author><name></name></author><category term="Python" /><summary type="html"><![CDATA[import random]]></summary></entry><entry><title type="html">Write our first Selenium program with Python 3 &amp;amp; Firefox</title><link href="https://sarathlal.com/first-selenium-program-python3-firefox/" rel="alternate" type="text/html" title="Write our first Selenium program with Python 3 &amp;amp; Firefox" /><published>2022-05-25T00:00:00+05:30</published><updated>2022-05-25T00:00:00+05:30</updated><id>https://sarathlal.com/first-selenium-program-python3-%20firefox</id><content type="html" xml:base="https://sarathlal.com/first-selenium-program-python3-firefox/"><![CDATA[<p><em>Prerequisite</em></p>
+
+<ol>
+  <li>Linux Machine</li>
+  <li>Firefox Browser</li>
+  <li>Gecko driver</li>
+</ol>
+
+<p>Create a directory for our projet.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir selenium-test
+cd selenium-test
+</code></pre></div></div>
+
+<p>Normally I use a virtual environment for python projects. So my first step is creating a virtual environment.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 -m venv env
+</code></pre></div></div>
+
+<p>Then install selenium inside new virtual environment.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install selenium
+</code></pre></div></div>
+
+<p>Lets create our program file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch first_program.py
+</code></pre></div></div>
+
+<p>Open the new file in editor or command line. Add the below content in the file &amp; save it.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+ 
+driver = webdriver.Firefox()
+
+#launch URL
+driver.get("https://www.google.com/")
+
+#identify search box
+m = driver.find_element(by=By.NAME, value="q")
+
+#enter search text
+m.send_keys("Open Source")
+
+#perform Google search with Keys.ENTER
+m.send_keys(Keys.ENTER)
+</code></pre></div></div>
+
+<p>Run the program.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python first_program.py
+</code></pre></div></div>]]></content><author><name></name></author><category term="Python" /><category term="Selenium" /><category term="Test Automation" /><category term="Firefox" /><summary type="html"><![CDATA[Prerequisite]]></summary></entry></feed>
